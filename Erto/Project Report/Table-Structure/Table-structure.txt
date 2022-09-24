@@ -1,0 +1,84 @@
+ desc app_id;
++----------+--------+------+-----+---------+-------+
+| Field    | Type   | Null | Key | Default | Extra |
++----------+--------+------+-----+---------+-------+
+| next_val | bigint | YES  |     | NULL    |       |
++----------+--------+------+-----+---------+-------+
+1 row in set (0.02 sec)
+
+-------------------------------------------------------
+images;
++-----------------+--------------+------+-----+---------+-------+
+| Field           | Type         | Null | Key | Default | Extra |
++-----------------+--------------+------+-----+---------+-------+
+| user_id         | int          | NO   | PRI | NULL    |       |
+| profile_picture | varchar(255) | YES  |     | NULL    |       |
++-----------------+--------------+------+-----+---------+-------+
+-----------------------------------------------------
+ learning;
++---------------------+--------------+------+-----+---------+-------+
+| Field               | Type         | Null | Key | Default | Extra |
++---------------------+--------------+------+-----+---------+-------+
+| applicant_id        | int          | NO   | PRI | NULL    |       |
+| aadhar_no           | varchar(12)  | YES  | UNI | NULL    |       |
+| appointment_date    | date         | YES  |     | NULL    |       |
+| apointment_time     | time         | YES  |     | NULL    |       |
+| blood_group         | varchar(20)  | YES  |     | NULL    |       |
+| created_at          | datetime(6)  | YES  |     | NULL    |       |
+| district            | varchar(25)  | YES  |     | NULL    |       |
+| dob                 | date         | YES  |     | NULL    |       |
+| email               | varchar(50)  | YES  |     | NULL    |       |
+| first_name          | varchar(15)  | YES  |     | NULL    |       |
+| gender              | varchar(20)  | YES  |     | NULL    |       |
+| identification_mark | varchar(50)  | YES  |     | NULL    |       |
+| landmark            | varchar(25)  | YES  |     | NULL    |       |
+| last_name           | varchar(15)  | YES  |     | NULL    |       |
+| appointment_status  | varchar(255) | YES  |     | NULL    |       |
+| mobile_no           | varchar(20)  | YES  |     | NULL    |       |
+| pincode             | varchar(6)   | YES  |     | NULL    |       |
+| state               | varchar(25)  | YES  |     | NULL    |       |
+| street              | varchar(50)  | YES  |     | NULL    |       |
+| village             | varchar(25)  | YES  |     | NULL    |       |
+| written_test_flag   | varchar(1)   | YES  |     | NULL    |       |
+| user_id             | int          | YES  | MUL | NULL    |       |
++---------------------+--------------+------+-----+---------+-------+
+-----------------------------------------------
+ permanent;
++---------------------+--------------+------+-----+---------+-------+
+| Field               | Type         | Null | Key | Default | Extra |
++---------------------+--------------+------+-----+---------+-------+
+| applicant_id        | int          | NO   | PRI | NULL    |       |
+| aadhar_no           | varchar(12)  | YES  | UNI | NULL    |       |
+| appointment_date    | date         | YES  |     | NULL    |       |
+| appointment_time    | time         | YES  |     | NULL    |       |
+| blood_group         | varchar(20)  | YES  |     | NULL    |       |
+| created_at          | datetime(6)  | YES  |     | NULL    |       |
+| district            | varchar(25)  | YES  |     | NULL    |       |
+| dob                 | date         | YES  |     | NULL    |       |
+| email               | varchar(50)  | YES  |     | NULL    |       |
+| first_name          | varchar(15)  | YES  |     | NULL    |       |
+| gender              | varchar(20)  | YES  |     | NULL    |       |
+| identification_mark | varchar(50)  | YES  |     | NULL    |       |
+| landmark            | varchar(25)  | YES  |     | NULL    |       |
+| last_name           | varchar(15)  | YES  |     | NULL    |       |
+| mobile_no           | varchar(20)  | YES  |     | NULL    |       |
+| appointment_status  | varchar(255) | YES  |     | NULL    |       |
+| pincode             | varchar(6)   | YES  |     | NULL    |       |
+| state               | varchar(25)  | YES  |     | NULL    |       |
+| street              | varchar(50)  | YES  |     | NULL    |       |
+| village             | varchar(25)  | YES  |     | NULL    |       |
+| written_test_flag   | varchar(1)   | YES  |     | NULL    |       |
+| user_id             | int          | YES  | MUL | NULL    |       |
++---------------------+--------------+------+-----+---------+-------+
+---------------------------------------------------------------------
+users;
++------------+--------------+------+-----+---------+----------------+
+| Field      | Type         | Null | Key | Default | Extra          |
++------------+--------------+------+-----+---------+----------------+
+| user_id    | int          | NO   | PRI | NULL    | auto_increment |
+| email      | varchar(50)  | NO   | UNI | NULL    |                |
+| first_name | varchar(15)  | YES  |     | NULL    |                |
+| last_name  | varchar(15)  | YES  |     | NULL    |                |
+| password   | varchar(200) | NO   |     | NULL    |                |
+| role       | varchar(20)  | YES  |     | NULL    |                |
++------------+--------------+------+-----+---------+----------------+

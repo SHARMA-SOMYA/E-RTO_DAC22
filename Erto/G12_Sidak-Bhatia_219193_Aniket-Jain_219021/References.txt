@@ -1,0 +1,7 @@
+REFERNCES
+
+React Tutorial (w3schools.com)
+Learn Spring Boot | Baeldung
+Spring Data JPA - Reference Documentation
+React – A JavaScript library for building user interfaces (reactjs.org)
+Bootstrap · the most popular HTML, CSS, and JS library in the world. (getbootstrap.com)
